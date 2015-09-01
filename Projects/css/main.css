@@ -1,0 +1,471 @@
+.glyphicon {
+    font-size: 35px;
+    float: right;
+    padding-right: 20px;
+}
+
+.mainHeader {
+    height: 400px;
+    background: url(../images/male-holding_mobile_phone1.jpg);
+    background-size: 100%;
+}
+
+.btn-lg {
+    margin-left: 50px;
+    margin-top: 25px;
+    color: black;
+    background-color: silver;
+    opacity: 0.4;
+    border: 0;
+}
+
+.nav-pills li a {
+    font-weight: 700;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 10px;
+    color: aquamarine;
+}
+
+.centerdiv {
+    width: 500px;
+    margin: auto auto;
+    padding-top: 250px;
+}
+
+.image {
+    width: 200px;
+    height: 199px;
+    float: left;
+    margin-top: 35px;
+    background-color: turquoise;
+    opacity: 0.3;
+}
+
+.image img {
+    padding-top: 20px;
+    width: 75px;
+    height: 125px;
+    display: block;
+    margin: 27px auto;
+}
+
+.mobileNo {
+    width: 550px;
+    height: 199px;
+    float: left;
+    margin-top: 35px;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.ng-scope{
+    height: 90px;
+    display: block;
+}
+.display p{  
+    width: 450px;
+    color: rgba(255,255,255,.4);
+    font-family: montserratbold,Arial,sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 60px;
+    font-weight: bold;
+}
+
+.col-lg-3 {
+    float: left;
+}
+
+.col-lg-7 {
+    padding-left: 67px;
+    padding-top: 114px;
+    float: left;
+}
+
+.col-lg-2 {
+    float: right;
+}
+
+.input-button {
+    clear: both;
+    width: 750px;
+    height: 235px;
+    margin: 0px auto;
+}
+
+.text-field {
+    width: 550px;
+    height: 70px;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+.text-field p {
+    color: blanchedalmond;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.modal-content-dth{
+    margin-top: 100px;
+}
+
+.number-field {
+    height: 100px;
+    float: left;
+    width: 425px;
+    padding-top: 23px;
+    padding-left: 20px;
+}
+
+.number-field_tab4{
+    height: 100px;
+    float: left;
+    width: 425px;
+    padding-top: 7px;
+    padding-left: 20px;
+}
+
+#billName{    
+    font-weight: 800;
+    margin-top: 25px;
+    margin-left: -8px;
+    margin-right: -5px;
+    color: aliceblue;
+}
+
+#dthmodal{
+    width: 295px;
+    height: 218px;
+    margin: 400px auto;
+}
+
+#dthmodal_header{
+    min-height: 16.43px;
+    padding-top: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    margin: auto 32px;    
+}
+
+#close_dth{
+    margin-top: -26px;
+    margin-right: -36px;
+}
+
+#dth_image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -moz-transition:-moz-transform 0.5s ease-in; 
+    -webkit-transition:-webkit-transform 0.5s ease-in; 
+    -o-transition:-o-transform 0.5s ease-in;
+}
+
+#dth_image:hover{
+    -webkit-transform:scale(1.25);
+}
+
+#bill_image:hover{
+    -webkit-transform:scale(1.35);
+}
+
+#dthbutton{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+#dthbutton button{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 24px;
+    margin-bottom: 12px;
+    background-color: initial;
+    display: inline-block;
+    border: 0px;
+}
+
+#dth_value{
+    margin: 0 0 -9px;
+    font-weight: bold;
+    text-align: center;
+}
+
+label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+
+.tab2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+    padding-right: 67px;
+}
+
+.tab5{
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+    margin-right: 113px;
+    margin-left: -21px;
+}
+
+ span.glyphicon.glyphicon-chevron-down{ 
+    padding-right: 7px;
+    margin-top: -50px;
+    color: #fff;
+}
+
+.number-field button{
+    height: 50px;
+    background-color: initial;
+    border-bottom: 2px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+}
+
+#btn_tab4{
+    height: 60px;
+    background-color: whitesmoke; 
+    border-bottom: 0px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 60px;
+    padding: 0px;
+    margin-left: 2px;
+    margin-right: 35px;
+    margin-top: -4px;
+}
+
+#bill_image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 9px;
+    margin-bottom: -5px;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+}
+
+.number-field input {
+    width: 236px;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    font-size: 40px;
+    line-height: 73px;
+    text-indent: 0;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    background: 0px 0px;
+    height: 60px;
+    font-weight: 700;
+    padding-left: 7px;
+}
+
+.clickchange{
+    height: 100px;
+}
+
+.numb {
+    width: 125px;
+    float: left;
+    height: 100px;
+    padding-top: 19px;  
+    padding-left: 30px;
+}
+
+.numb p {
+    margin: 0;
+    height: 110px;
+    font-size: 40px;
+    padding-top: 19px;
+    padding-left: 13px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.submit-button {
+    width: 125px;
+    float: right;
+    height: 100px;
+    padding-top: 40px;
+    padding-right: 58px;
+}
+
+.modal-content-login {
+    height: 373px;
+    background-color: ghostwhite;
+    position: absolute;
+    z-index: 1;
+}
+
+.modal-content-signup {
+    height: 488px;
+    background-color: ghostwhite;
+    position: absolute;
+    z-index: 0;
+}
+
+div.modal-dialog.modal-sm {
+    width: 700px;
+}
+
+.modal-left {
+    width: 450px;
+    float: left;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-right: 18px;
+}
+
+.modal-center {
+    width: 20px;
+    float: left;
+}
+
+.modal-right {
+    width: 220px;
+    float: right;
+    height: 300px;
+}
+
+.center-line-up {
+    border: 1px solid;
+    height: 60px;
+    width: 0px;
+    margin-top: 129px;
+    border-color: gainsboro;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.center-line-middle {
+    width: 0px;
+    color: gainsboro;
+}
+
+.center-line-down {
+    width: 0px;
+    border: 1px solid;
+    height: 60px;
+    margin-bottom: 70px;
+    border-color: gainsboro;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.title-header{
+    width: 465px;
+}
+
+.title-header h3 {
+    font-size: 23px;
+    font-weight: 700;
+    color: gray;
+}
+
+.signin-wrapper p{
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+    opacity: 0.7;
+}
+
+.title-header h5 {
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+    opacity: 0.7;
+    padding-bottom: 30px;
+}
+
+.signin-wrapper a {
+    text-decoration: none;
+    margin-left: 234px;
+    line-height: 0.7;
+}
+
+.modal-footer {
+    padding-left: 14px;
+    text-align: left;
+    border-top: 0px solid #e5e5e5;
+    margin: -27px auto;
+}
+
+.btn-block {
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    border-color: #204d74;
+}
+
+.button{
+    font-weight: 400;
+}
+
+.btn-facebook {
+    width: 192px;
+    height: 37px;
+    margin: 34px auto;
+}
+
+.btn-google {
+    width: 192px;
+    height: 37px;
+    margin: -15px auto;
+}
+
+.close {
+    margin-top: 8px;
+    margin-right: 15px;
+}
+
+.social-button {
+    margin: 125px 14px;
+}
+
+.divider {
+    width: 615px;
+    border: 1px solid gainsboro;
+    margin-top: 45px;
+    margin-left: -14px;
+}
+
+.btn-signup {
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    opacity: 0.7;
+    width: 410px;
+    margin: 0 -12px;
+}
+
+.btn-signup a {
+    text-decoration: none;
+    line-height: 0.9;
+    color: mediumturquoise;
+}
+
+.btn-signup button {
+    border: 0px;
+    background: ghostwhite;
+}
+
+.form-control{
+    border-radius: 4px;
+    font-weight: bolder;
+    margin: -7px auto;
+}

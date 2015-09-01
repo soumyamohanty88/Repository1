@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+
+<head>
+    <title>Online Recharge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.1/bootstrap-social.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../controller/mainController.js"></script>
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+</head>
+
+<body>
+    <header class="mainHeader">
+        <div class="col-lg-3">
+            <span style="cursor:pointer">
+                <!--<img src="../images/200px-FreeCharge_logo.jpg"/></span>-->
+        </div>
+        <div class="col-lg-7">
+            <ul class="nav nav-pills" ng-init="tab = 1">
+                <li ng-class="{active: tab===1}"><a href ng-click ="tab = 1">MOBILE</a></li>
+                <li ng-class="{active: tab===2}"><a href ng-click ="tab = 2">DTH</a></li>
+                <li ng-class="{active: tab===3}"><a href ng-click ="tab = 3">DATACARD</a></li>
+                <li ng-class="{active: tab===4}"><a href ng-click ="tab = 4">BILL PAYMENTS<sup>beta</sup></a></li>
+                <li ng-class="{active: tab===5}"><a href ng-click ="tab = 5">METRO<sup>beta</sup></a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2" ng-controller="loginCtrl">
+            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal" ng-click="showHide()">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Login
+            </button>
+            <!--Modal to open login page-->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content-login" ng-show="isVisible">
+                        <div class="modal-left">
+                            <div class="title-header">
+                                <h3>Signin with freecharge account</h3>
+                                <h5>Welcome back! Enter your password to login!</h5>
+                            </div>
+                            <div class="signin-wrapper">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <br/>
+                                <input type="password" class="form-control" placeholder="Password">
+                                <br/>
+                                <a href="#">Forgot your password?</a>
+                                <br/>
+                                <button type="submit" class="btn btn-info btn-block">SIGN IN</button>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="divider">
+                                </div>
+                                <div class="btn-signup">
+                                    <p>Don't have a freecharge account?<a href="" ng-click="hideShow()"> Click here </a>to create one</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-center">
+                            <div class="center-line-up"></div>
+                            <div class="center-line-middle">
+                                <p>OR</p>
+                            </div>
+                            <div class="center-line-down"></div>
+                        </div>
+                        <div class="modal-right">
+                            <div>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="social-button">
+                                <button type="button" class=" btn btn-facebook">Sign in with facebook</button>
+                                <button type="button" class="btn btn-google">Sign in with Google</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content-signup" ng-hide="isVisible">
+                        <div class="modal-left">
+                            <div class="title-header">
+                                <h3>Create a freecharge account</h3>
+                                <h5>Enter your details and we will create a freecharge account for you</h5>
+                            </div>
+                            <div class="signin-wrapper">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <br/>
+                                <input type="text" class="form-control" placeholder="Name">
+                                <br/>
+                                <input type="tel" class="form-control" placeholder="Mobile Number">
+                                <br/>
+                                <input type="password" class="form-control" placeholder="Password">
+                                <br/>
+                                <p>Tip: Protect your account. Use a mixed case alphanumeric password with special characters.</p>
+                                <br/>
+                                <button type="submit" class="btn btn-primary btn-block">CREATE MY ACCOUNT</button>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="divider">
+                                </div>
+                                <div class="btn-signup">
+                                    <p>Already have a freecharge account? <a href="#" ng-click="showHide()"> Click here </a>to login</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-center">
+                            <div class="center-line-up"></div>
+                            <div class="center-line-middle">
+                                <p>OR</p>
+                            </div>
+                            <div class="center-line-down"></div>
+                        </div>
+                        <div class="modal-right">
+                            <div>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="social-button">
+                                <button type="button" class=" btn btn-facebook">Sign in with facebook</button>
+                                <button type="button" class="btn btn-google">Sign in with Google</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="input-button">
+            <div class="image">
+                <img src="../images/mobilephone.jpg" ng-show="tab === 1"/>
+                <img src="../images/train_symbol.jpg" ng-show="tab === 5"/>
+            </div>
+
+            <div class="mobileNo">
+                <div class="display">
+                     <p ng-show="tab === 1"> Enter your mobile number </p>
+			         <p ng-show="tab === 2"> Pay your DTH bill. Which operator? </p>
+                    <p ng-show="tab === 3"> Enter your datacard number </p>
+			         <p ng-show="tab === 4"> Choose a product </p>
+			         <p ng-show="tab === 5"> Which Operator? </p>
+                </div>
+                <div class="clickchange">
+                    <div class="number-field" ng-show="tab === 1">
+                        <label>+91-</label><input type="text">
+                    </div>
+                    <div class="number-field" ng-show="tab === 2">
+                        <button type="button" class="btn btn-block" data-toggle="modal" data-target="#DTHwindow">
+                            <p class="tab2">Select DTH Operator</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>    
+                        </button>                      
+                    </div>
+                    <div class="number-field" ng-show="tab === 3">
+                        <label>+91-</label><input type="text" required>
+                    </div>
+                    <div class="number-field_tab4" ng-show="tab === 4" ng-controller="billpaymentCtrl">
+                        <button type="button" class="btn btn-default" ng-repeat="bill in bills" id="btn_tab4">
+                            <img ng-src={{bill.billImage}} id="bill_image"/>
+                            <p id="billName">{{bill.billName}}</p>
+                        </button>
+                    </div>
+                    <div class="number-field" ng-show="tab === 5">
+                        <button type="button" class="btn btn-block" data-toggle="modal" data-target="#metro_window">
+                            <p class="tab5">Select your Metro</p>
+                            <span class="glyphicon glyphicon-chevron-down"></span>    
+                        </button> 
+                    </div>
+                    <div class="submit-button">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-arrow-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dthwindow" ng-controller="hoverCtrl">
+             <div class="modal fade" id="DTHwindow" role="dialog">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content" id="dthmodal">
+                    <div class="modal-header" id="dthmodal_header">
+                      <p id="dth_value">{{dth}}</p>
+                      <button type="button" class="close" data-dismiss="modal" id="close_dth">&times;</button>
+                    </div>
+                    <div class="modal-body" id="dthbutton" ng-mouseleave="clear_dth()">
+                        <button type="button" class="btn btn-default" ng-repeat="option in dth_options" ng-mouseover="hovered_dth(option)">
+                            <img ng-src={{option.image}} id="dth_image"/>
+                        </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="dthwindow" ng-controller="hoverCtrl">
+             <div class="modal fade" id="metro_window" role="dialog">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content" id="dthmodal">
+                    <div class="modal-header" id="dthmodal_header">
+                      <p id="dth_value">{{dth}}</p>
+                      <button type="button" class="close" data-dismiss="modal" id="close_dth">&times;</button>
+                    </div>
+                    <div class="modal-body" id="dthbutton" ng-mouseleave="clear_dth()">
+                        <button type="button" class="btn btn-default" ng-repeat="rail in railways" ng-mouseover="hovered_dth(option)">
+                            <img ng-src={{rail.railImg}} id="dth_image"/>
+                        </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
